@@ -128,12 +128,38 @@
 				 bidirecional, mas como o processador é mais rápido do que a memória a velocidade se limita ao do dispositivo mais lento. Assim, uma das soluções para a resolução deste
 				problema seria colocar um componente rápido entre estes dois módulos para trabalhar de forma mais eficiente, conhecemos este elemento intermediário pelo nome de 
 				memória cache. Vale ressaltar que a adição desta memória irá resolver apenas este problema específico, assim ao longo da nossa discussão veremos que diversos fatores podem
-				influenciar no desempenho de uma arquitetura como a tecnologia que está sendo empregada nos componentes, a lógica das operações e entre outras características.</p>
+				influenciar no desempenho de uma arquitetura inclusive a tecnologia que está sendo empregada nos componentes internos, a lógica das operações e entre outras características.</p>
 			
 			</div>
 		</div>
 	</div>
-
+	 
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-12">
+				<h1> Aprofundando na Arquitetura Von Neumann </h1>
+				<p class ="text-justify"> Quando analisamos a estrutura de uma arquitetura, podemos dizer que quanto mais chegamos perto da análise dos componentes a nível de Hardware(baixo nível)
+				mais difícil se torna o entendimento devido a tamanha complexidade envolvida. Assim, partindo deste princípio faremos uma análise mais detalhada dos módulos da arquitetura Von Neumann
+				focando especificadamente no módulo de E/S e Memória.</p>
+				<h3> Módulo E/S </h3>
+				<ul>
+					<li>Trabalha diretamente com a CPU</li>
+					<li>Interage com o meio externo fornecendo informações ao S.O</li>
+					<li>TIPOS: Programada, por interrupção e DMA</li>
+					<li>Se conecta com o barramento do sistema</li>
+					<li>Função: Controle e Temporização, Comunicação com Dispositivos
+					Armazenamento Temporário e Detecção de Erros</li>
+					<li>Comandos entre CPU e Mod.E/S - (controle, teste, leitura e gravação)</li>
+					<li>Técnicas do Módulo para identificar dispositivos: Múltiplas linhas, por software , Daisy Chain e Arbitração.</li>
+					
+				</ul>
+				                                                                                                                                                
+					
+			</div>
+		</div>
+	</div>
+	  
+	  
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
