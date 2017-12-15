@@ -21,9 +21,10 @@ button.download{
 
 }
 .menu-diferente{
+	background-color: #5a5a5a;	
+}
+nav#menu{
 	background-color: #5a5a5a;
-	
-	
 }
 img#logo{
 	width: 40px;
