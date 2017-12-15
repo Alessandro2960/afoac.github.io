@@ -1,5 +1,31 @@
 .inicio{
-    margin-top:150px;
+body{
+	font-family: tahoma;
+	font-size: 200%;
 
+}
+.inicio{
+    margin-top:100px;
+}
+button.download{
+	margin-top: 300px;	
+	
+}
+.imgneumann{
+	margin-top: 50px;
+	
+}
+.componentes{
+	margin-top: 80px;
+	
 
+}
+.menu-diferente{
+	background-color: #5a5a5a;
+	
+	
+}
+img#logo{
+	width: 50px;
+	margin-top: -10px;
 }
