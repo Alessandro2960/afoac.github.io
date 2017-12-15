@@ -15,6 +15,25 @@
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap.css" rel="stylesheet">
     <link href="Personalizado.css" rel="stylesheet">
+	<link href="carousel.css" rel="stylesheet">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+
+		<script src="bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="jquery.js"> </script>
+
+		<script type="text/javascript" src="cycle.js"> </script>
+
+		<script src="main.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
  
 
   </head>
@@ -37,7 +56,7 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                       <ul class="nav navbar-nav navbar-right">
-                          <li> <a href="Lista3"> <button class="btn btn-primary"> DOWNLOAD  </button> </a> </li>
+                          <li> <a href="Lista3"> <button class="btn btn-primary"> Introdução  </button> </a> </li>
 
                         <li><a href="#">Settings</a></li>
                         <li><a href="#">Profile</a></li>
@@ -50,7 +69,8 @@
         </div>
       </div>  
     </div> <!-- /container -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	
+	 <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -103,36 +123,37 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-  </div><!-- /.carousel -->
+    </div><!-- /.carousel -->
 
     <div class="container inicio">
       <div class"row">
         <div class="col-xs-12">
-          <p class="text-justify">Durante a segunda guerra mundial estava sendo construído um computador para melhorar os acertos balísticos, 
-            também conhecido como ENIAC. Este projeto era financiando exclusivamente pelo exército dos EUA e era composto por
-            dois cientistas, John Eckert e John Mauchly. Depois disto, apesar dos recursos financeiros empregados, 
-            o projeto foi concluído com sucesso, mas depois do fim da segunda guerra mundial o que tornou-o inutilizável
-            para tal fim, pois o seu objetivo de construção havia terminado e consequentemente o seu propósito foi encerrado. 
-            Apesar das circunstâncias, o projeto do computador ENIAC iria revolucionar a tecnologia existente e definir a base 
-            da arquitetura para a computação através do modelo de Von Neumann ao qual iremos retratar detalhadamente ao longo da 
-            discussão.
+          <p class="text-justify">Antes de falarmos especificadamente da Arquitetura Von Neumann, é importante voltar ao passado para tentarmos descobrir 
+		  os motivos e necessidades que levaram a criação deste modelo de arquitetura que utilizamos inclusive atualmente. John Von Neumann já era considerado 
+		  na época um dos principais matemáticos do mundo, pois teve contribuições e soluções em diversas área como física, economia, matemática e por fim 
+		  computação. Entretanto, John participava da equipe do Laboratório de Pesquisas Balísticas que procurava uma forma de automatizar os cálculos
+		  balísticos para o governo com a intenção de auxiliar na 2ª guerra mundial. Entretanto, isto só era possível com uma máquina eficiente, 
+		  assim a partir deste momento ele se envolveu com alguns cientistas que participavam do projeto ENIAC (O primeiro computador do mundo) 
+		  mas que já estava congelado devido ao fim da guerra. Após isso, os mesmo cientistas do ENIAC começaram a trabalhar em um novo projeto chamado
+		  EDVAC e John Von Neumann se interessou pelo mesmo e passou a participar deste projeto, 
+		  tendo como principal responsabilidade desenvolver a estrutura de funcionamento do mesmo e justamente por isto, surgiu o modelo de Arquitetura Von Neumann. 
           </p>  
         </div>
         <div class="col-xs-12">
-          <p class="text-justify">Até o presente momento, os computadores eram construídos para tarefas
+          <p class="text-justify">Até o presente momento da época, os computadores eram construídos para tarefas
             específicas(computadores de programa fixo), assim caso a necessidade do projeto passasse 
             por alguma alteração ou os objetivos definidos inicialmente fossem alterados, consequente o projeto de construção do 
-            computador teria que ser totalmente remodelado para as novas necessidades. Pensando em tal problemática, 
-            os mesmos cientistas iniciaram um novo projeto chamado de EDVAC, mas com um novo integrante matemático chamado 
-            John Von Neumann que escreveu um artigo sobre o EDVAC que estavam inclusos seus componentes, estruturas lógicas e 
-            matemáticas definindo assim um novo modelo de arquitetura que é utilizado pela maioria dos computadores atuais chamado,
-            Arquitetura Von Neumann.
+            computador teria que ser totalmente remodelado para as novas necessidades, sem falar dos custos envolvidos com essas mudanças. Antes do EDVAC é importante
+			lembrar que as máquinas eram programadas
+			com cartões perfurados, painéis, fitas além de disporem de pouca capacidade de memória, método de programação difícil e com base decimal o que
+			tornava o trabalho dos programadores(na sua maioria mulheres) extremamente difícil e imprevisível.
 
           </p>  
         </div>
         <div class="col-xs-12">
           <p class="text-justify">John Von Neumann seguiu uma linha de raciocínio de lógica e construção totalmente
-            diferente do que existia até aquele momento, as principais características são: Construção de um computador 
+            diferente do que existia até aquele momento pensando justamente nos problemas sitados anteriormente, as principais características 
+			são: Construção de um computador 
             de propósito geral e que fosse alterado facilmente de acordo com os objetivos definidos, armazenamento de 
             dados e instruções em um único local, unidade de processamento, unidade lógica,unidade aritmética e unidade de controle.
             Isso permitiu que atualmente, o mesmo computador que você utiliza para entrar na internet, também possa ser utilizado para realização 
@@ -160,18 +181,80 @@
 			 
 			 
 			  <div class="col-xs-12 col-md-4">
+				<p>De foma bem clara podemos resumir a arquitetura Von Neumann da seguinte forma:</p>
 				<ul class="componentes">
-					<li> ULA - Responsável pelas operações</li>
+					<li> ULA - Responsável pelas operações realizadas</li>
 					<li> Memoria Principal - Armazena dados e programas</li>
 					<li> UC - Controla as operações, E/S e interação com a memória</li>
-					<li> E/S - Comunicação com dispositivos </li>
+					<li> E/S - Comunicação com dispositivos externos</li>
+					<li> Principal Característica: Armazenamento de Dados e Programas em um mesmo local</li>
 				</ul>
 			 </div>
 
 	
 		</div>
 	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-12">
+				<h1> Aprofundando na Arquitetura Von Neumann </h1>
+					<h3> Módulo E/S - Objetivo </h3>
+						<p class="text-justify">Não menos importante, o módulo de entrada e saída é também um componente muito importante desta arquitetura, 
+						pois através da mesma os dados podem ser inseridos para serem processados assim como exibidos por uma saída qualquer. 
+						Entretanto, é importante para os profissionais de tecnologia, especialmente Cientistas da Computação fazerem a seguinte pergunta: 
+						Por que existe o módulo de E/S? Imagine que o processador é um componente extremamente rápido, mas por outro lado um teclado é um 
+						dispositivo muito lento. Se desejarmos inserir uma informação sem um módulo de E/S a velocidade de transmissão se limitará ao do 
+						dispositivo mais lento, além do processador ficar ocioso a maior parte do tempo. Assim, o módulo de E/S atua diretamente entre CPU e 
+						os dispositivos a fim de evitar  problemas que afetem de forma negativa o desempenho do sistema como um todo e para isso utiliza 
+						técnicas para identificar quando um dispositivo deseja se comunicar(Múltiplas linhas, por software , Daisy Chain e Arbitração) 
+						e tipos de modos( Programada, por interrupção e DMA), 
+						assim a técnica e tipo de modo têm relação direta com o desempenho da arquitetura como um todo.</p>
+			</div>
+			<div class="col-xs-12 col-md-3">
+					<h3> Função do Módulo </h3>
+						<ul>
+							<li> Controle e Temporização </li>
+							<li> Comunicação entre CPU e Dispositivos </li>
+							<li> Armazenamento Temporário(Buffer Intenro)</li>
+							<li> Detecçãode Erros</li>	
+						</ul>
+			</div>
+			<div class="col-xs-12 col-md-3">
+					<h3> Comandos Recebidos pelo Módulo </h3>
+						<ul>
+							<li> Controle - Ativar um periférico </li>
+							<li> Teste - Disponibilidade do Dispositivo </li>
+							<li> Leitura - ler um dado do Periférico</li>
+							<li> Gravação - Pegar dado e enviar ao periférico</li>	
+						</ul>
+			</div>
+			<div class="col-xs-12 col-md-3">
+					<h3> Tipos de E/S </h3>
+						<ul>
+							<li> Programada - CPU espera até terminar a operação requisitada </li>
+							<li> E/S Interrup - CPU pode executar outras tarefas</li>
+							<li> DMA - O módulo trabalha diretamete com a RAM</li>
+							
+						</ul>
+			</div>
+			<div class="col-xs-12 col-md-3">
+					<h3> Ident. Dispositivos </h3>
+						<ul>
+							<li> Linhas Interrupção - Não utilizada na prática</li>
+							<li> Software - CPU Interroga os módulos pelo endereço</li>
+							<li> Daisy Chain - Utilizar vetor de interrupção</li>
+							<li> Arbitração - Decisão por Prioridade</li>
+							
+						</ul>
+			</div>
+			<div class="col-xs-12 col-md-12">
+				<h3> Unidade de Controle </h3>
+				<p class="text-justify"></p>
+					
+			</div>
+		</div>
 	
+	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-12">
@@ -182,39 +265,13 @@
 				 dos principais problemas foi o GARGALO de VON NEUMANN. Este gargalo surgiu simplesmente porque o processador e a memória principal precisavam trocar informações de forma
 				 bidirecional, mas como o processador é mais rápido do que a memória a velocidade se limita ao do dispositivo mais lento. Assim, uma das soluções para a resolução deste
 				problema seria colocar um componente rápido entre estes dois módulos para trabalhar de forma mais eficiente, conhecemos este elemento intermediário pelo nome de 
-				memória cache. Vale ressaltar que a adição desta memória irá resolver apenas este problema específico, assim ao longo da nossa discussão veremos que diversos fatores podem
-				influenciar no desempenho de uma arquitetura inclusive a tecnologia que está sendo empregada nos componentes internos, a lógica das operações e entre outras características.</p>
+				memória cache.</p>
 			
 			</div>
 		</div>
 	</div>
-	 
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-12">
-				<h1> Aprofundando na Arquitetura Von Neumann </h1>
-				<p class ="text-justify"> Quando analisamos a estrutura de uma arquitetura, podemos dizer que quanto mais chegamos perto da análise dos componentes a nível de Hardware(baixo nível)
-				mais difícil se torna o entendimento devido a tamanha complexidade envolvida. Assim, partindo deste princípio faremos uma análise mais detalhada dos módulos da arquitetura Von Neumann
-				focando especificadamente no módulo de E/S e Memória.</p>
-				<h3> Módulo E/S </h3>
-				<ul>
-					<li>Trabalha diretamente com a CPU</li>
-					<li>Interage com o meio externo fornecendo informações ao S.O</li>
-					<li>TIPOS: Programada, por interrupção e DMA</li>
-					<li>Se conecta com o barramento do sistema</li>
-					<li>Função: Controle e Temporização, Comunicação com Dispositivos
-					Armazenamento Temporário e Detecção de Erros</li>
-					<li>Comandos entre CPU e Mod.E/S - (controle, teste, leitura e gravação)</li>
-					<li>Técnicas do Módulo para identificar dispositivos: Múltiplas linhas, por software , Daisy Chain e Arbitração.</li>
-					
-				</ul>
-				                                                                                                                                                
-					
-			</div>
-		</div>
-	</div>
-	  
-	  
+	
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
