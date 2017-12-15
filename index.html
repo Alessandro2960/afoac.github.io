@@ -47,7 +47,7 @@
 
   </head>
 
-  <body>
+ <body>
 
     <div class="container">
       <div class="row">
@@ -61,7 +61,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                       </button>
-                      <a class="navbar-brand" href="#"> <img src="" id="logo"/></a>
+                      <a class="navbar-brand" href="#"> <img src="logo_menu_min.png" id="logo"/></a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                       <ul class="nav navbar-nav navbar-right">
@@ -97,7 +97,6 @@
 					<li class="sumario"> <h3> Comparação de Complexidade das Estruturas de Dados</li></h3>
 				
 				</ul>
-
               </div>
           </div>
         </div>
@@ -135,11 +134,12 @@
     <div class="container inicio">
       <div class"row">
         <div class="col-xs-12">
+			<h1><b> Contexto Histórico </b></h1>
           <p class="text-justify">Antes de falarmos especificadamente da Arquitetura Von Neumann, é importante voltar ao passado para tentarmos descobrir 
 		  os motivos e necessidades que levaram a criação deste modelo de arquitetura que utilizamos inclusive atualmente. John Von Neumann já era considerado 
 		  na época um dos principais matemáticos do mundo, pois teve contribuições e soluções em diversas área como física, economia, matemática e por fim 
 		  computação. Entretanto, John participava da equipe do Laboratório de Pesquisas Balísticas que procurava uma forma de automatizar os cálculos
-		  balísticos para o governo com a intenção de auxiliar na 2ª guerra mundial. Entretanto, isto só era possível com uma máquina eficiente, 
+		  balísticos para o governo com a intenção de auxiliar na 2ª guerra mundial. Contudo, isto só era possível com uma máquina eficiente, 
 		  assim a partir deste momento ele se envolveu com alguns cientistas que participavam do projeto ENIAC (O primeiro computador do mundo) 
 		  mas que já estava congelado devido ao fim da guerra. Após isso, os mesmo cientistas do ENIAC começaram a trabalhar em um novo projeto chamado
 		  EDVAC e John Von Neumann se interessou pelo mesmo e passou a participar deste projeto, 
@@ -165,21 +165,17 @@
             dados e instruções em um único local, unidade de processamento, unidade lógica,unidade aritmética e unidade de controle.
             Isso permitiu que atualmente, o mesmo computador que você utiliza para entrar na internet, também possa ser utilizado para realização 
             de cálculos, jogos, 
-            processamento de imagens e infinitas soluções, abaixo temos um diagrama de como é a organização dessa arquitetura.
+            processamento de imagens e infinitas soluções, ou seja, uma arquitetura genérica. Abaixo temos um diagrama de como é a organização dessa arquitetura.
           </p>  
 	
 
         </div>
-        
-    
-        
-      </div>
-      
+      </div>   
     </div>
 	
 	<div class="container">
 		<div class="row">
-			<h1> ILUSTRAÇÃO ARQUITETURA VON NEUMANN </h1>
+			<h1> <b>ILUSTRAÇÃO ARQUITETURA VON NEUMANN</b> </h1>
 
 			 <div class="col-xs-12 col-md-8">
 				<img src="Neumann.png" class="imgneumann img-responsive img-thumbnail">
@@ -188,7 +184,7 @@
 			 
 			 
 			  <div class="col-xs-12 col-md-4">
-				<p>De foma bem clara podemos resumir a arquitetura Von Neumann da seguinte forma:</p>
+				<p id="texto" class="text-justify"><b>De foma bem clara podemos resumir a arquitetura Von Neumann da seguinte forma:</b></p>
 				<ul class="componentes">
 					<li> ULA - Responsável pelas operações realizadas</li>
 					<li> Memoria Principal - Armazena dados e programas</li>
@@ -204,8 +200,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-12">
-				<h1> Aprofundando na Arquitetura Von Neumann </h1>
-					<h3> Módulo E/S - Objetivo </h3>
+				<h1> <b>Aprofundando na Arquitetura Von Neumann</b> </h1>
+					<h3 class="sub-tittle"> 1. Módulo E/S - Objetivo </h3>
 						<p class="text-justify">Não menos importante, o módulo de entrada e saída é também um componente muito importante desta arquitetura, 
 						pois através da mesma os dados podem ser inseridos para serem processados assim como exibidos por uma saída qualquer. 
 						Entretanto, é importante para os profissionais de tecnologia, especialmente Cientistas da Computação fazerem a seguinte pergunta: 
@@ -218,7 +214,7 @@
 						assim a técnica e tipo de modo têm relação direta com o desempenho da arquitetura como um todo.</p>
 			</div>
 			<div class="col-xs-12 col-md-3">
-					<h3> Função do Módulo </h3>
+					<h3 class="sub-tittle text-center"> Função do Módulo </h3>
 						<ul>
 							<li> Controle e Temporização </li>
 							<li> Comunicação entre CPU e Dispositivos </li>
@@ -227,7 +223,7 @@
 						</ul>
 			</div>
 			<div class="col-xs-12 col-md-3">
-					<h3> Comandos Recebidos pelo Módulo </h3>
+					<h3 class="sub-tittle text-center"> Comandos Recebidos pelo Módulo </h3>
 						<ul>
 							<li> Controle - Ativar um periférico </li>
 							<li> Teste - Disponibilidade do Dispositivo </li>
@@ -236,7 +232,7 @@
 						</ul>
 			</div>
 			<div class="col-xs-12 col-md-3">
-					<h3> Tipos de E/S </h3>
+					<h3 class="sub-tittle text-center"> Tipos de E/S </h3>
 						<ul>
 							<li> Programada - CPU espera até terminar a operação requisitada </li>
 							<li> E/S Interrup - CPU pode executar outras tarefas</li>
@@ -245,7 +241,7 @@
 						</ul>
 			</div>
 			<div class="col-xs-12 col-md-3">
-					<h3> Ident. Dispositivos </h3>
+					<h3 class="sub-tittle text-center"> Ident. Dispositivos </h3>
 						<ul>
 							<li> Linhas Interrupção - Não utilizada na prática</li>
 							<li> Software - CPU Interroga os módulos pelo endereço</li>
@@ -255,17 +251,67 @@
 						</ul>
 			</div>
 			<div class="col-xs-12 col-md-12">
-				<h3> Unidade de Controle </h3>
-				<p class="text-justify"></p>
+				<h3  class="sub-tittle"> 2. Unidade de Controle </h3>
+				<p class="text-justify">Podemos dizer que a Unidade de Controle é um dos principais componentes da arquitetura Von Neumann, senão o mais importante. A UC é responsável
+				desde a busca das operações até a garantia de execução das mesmas, identificação da operação que será realizada pela ULA, transferências de dados entre registradores e outros 
+				componentes do sistema através dos ciclos de Busca,Indireto,Execução e Interrupção. Entretanto, é importante pensar de forma crítica e se perguntar, como que a unidade de controle faz tantas coisas ao mesmo tempo? Devido à sua responsabilidade
+				imensa, a melhor forma de realizar as suas tarefas são através de sinais de controle que garante o sequenciamento e execução das microoperações presentes nos ciclos que podem ser dos tipos: Relógio, Registrador de
+				Condições, Sinais de Controle para o Barramento, Sinais de Controle Internos, Sinais de Controle para o Barramento de Controle e Registradores de instruções aos quais todos esses itens
+				serão demonstrados abaixos juntamente com seus objetivos além do detalhamento dos sub-ciclos. Depois disto, vale ressaltar que muitos concluem que a Unidade de Controle é de fato o processador em si, pois desempenha papéis tão importantes
+				na arquitetura que é insubstituível, mas esta análise é um pouco superficial já que o processador é um conjunto de componentes e não somente a UC, assim do ponto de vista de arquitetura não podemos concluir que
+				a UC é de fato o processador, mas claro sem ela nada funciona.</p>
 					
 			</div>
+			<div class="col-xs-12 col-md-6">
+				<h3 class="text-center sub-tittle">Sub-Ciclos</h3>
+				<ul>
+					<li>Busca - Possui 4 microoperações sendo o primeiro ciclo a ser acionado. </li>
+					<li>Indireto - Usada quando a instrução se refere a um end. indireto.</li>
+					<li>Interrupção - Se estiver habilitada, utilizada após o ciclo de execução</li>
+					<li>Execução - Processamento da instrução e possui N microoperações</li>
+				
+				</ul>
+			
+			
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<h3 class="text-center sub-tittle">Sinais de Controle</h3>
+				<ul>
+					<li>Relógio - Sincroniza as microoperações</li>
+					<li>Registrador de Condição - Status CPU</li>
+					<li>Sinais p/ Barramento Controle - Fornece sinais de interrupção</li>
+					<li>Sinais Controle Interno - MOV. dados entre registradores</li>
+					<li>Sinais p/ barramento Controle - RAM <--> E/S</li>
+					<li>Registrador de Instruções - Código da Operação</li>
+				
+				</ul>
+			</div>
 		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h1> <b>Memórias </b> </h1>
+					<p class="text-justify"> Da arquitetura Von Neumann a principal característica revolucionária na época e que se mantém inclusive atualmente, foi a questão de armazenamento
+					de dados e programas  em um mesmo local de armazenamento. Não vamos aprofundar, mas é importante ressaltar que as memórias possuem diversas características nas tecnologias de fabricação,
+					métodos de acesso (Sequencial,Direto,Aleatório,Associativo) e entre outros. Entretanto, o que nos interessa é fazer uma análise desse componente dentro da arquitetura Von Neumann e como
+					o desempenho geral está ligado diretamente à memória. Tomando como principal foco a questão de desempenho, o que devemos observar das memórias e sua hierarquia é que o nível superior da 
+					pirâmide possui as memórias mais rápidas  porém mais caras e com pouco armazenamento, enquanto os níveis inferiores possui maior armazenamento, mas a velocidade é bem menor. Dessa relação
+					, podemos concluir que a medida que subimos a pirâmide o custo por bit de armazenamento se torna mais caro além de sabermos agora o motivo da memória cache ser tão pequena e rápida, justamente
+					por se encontrar na parte superior da pirâmmide.</p>
+				</div>
+				<div class="col-xs-12 col-md-6">
+						<img src="Memorias.jpg" class="imgneumann img-responsive img-thumbnail"  id="memoria">
+				</div>
+			</div>
+		</div>
+		
 	
 	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-12">
-				<h1> Gargalo de Von Neumann </h1>
+				<h1> <b> Gargalo de Von Neumann </b> </h1>
 				<p class="text-justify">Na imagem 1.1 do modelo Von Neumann podemos ver os seus principais componentes de maneira superficial, pois o foco desta resenha 
 				não é aprofundar detalhadamente em cada modulo, mas sim fazer uma breve apresentação para futuramente analisarmos de forma crítica com outros modelos. Entretanto,
 				 o que podemos observar é que apesar deste modelo ser utilizado atualmente, no princípio de sua criação já foram observados alguns problemas em relação ao desempenho e um
@@ -278,7 +324,93 @@
 		</div>
 	</div>
 	
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-12">
+				<h1> <b> Arquitetura Harvard </b> </h1>
+				<p class="text-justify">Como vimos anteriormente, a arquitetura Von Neumann foi criada para propósito geral, mas com a necessidade de se obter maior desempenho
+				para a resolução de problemas específicos, surgiu a arquitetura chamada Harvard. Para obter mais desempenho, a principal diferença que podemos destacar entre a 
+				Arquitetura  Harvard x Arquitetura Von Neumann foi o armazenamento de dados e instruções em locais diferentes , isso permite que o processador possa acessar os dois tipos de memórias simultaneamente.
+				 Somente pelo fato de se separar as memórias em locais distintos, obtemos de fato mais desempenho,
+				menos ciclos de instruções são utilizados para um determinado problema em comparação com a arquitetura Von Neumann, por outro lado a complexidade na fabricação dessa arquitetura se torna mais
+				difícil além do custo envolvido ser maior, isso inclusive justifica o fato dela não ser utilizada nos computadores atuais por completa, o que temos atualmente, são combinações de característas
+				das duas arquiteturas. Depois disto, é importante dizer que a arquitetura Harvard baseia-se em microcontroladores com característca RISC o que justifica o custo elevado, pois algumas implementações são feitas
+				a nível de hardware para obter maior desempenho, enquanto a arquitetura Von Neumann é baseada em CISC, onde em baixo nível tem somente as principais instruções implementadas que são utilizadas pelo processador. Portanto,
+				é interessante relatar que as arquiteturas mencionadas tem suas vantagens e desvantagens de acordo com a aplicação desejada, não existe arquitetura melhor que a outra, mas sim uma arquitetura ideal para satisfação de uma necessidade
+				. Depois disto, vale ainda dizer que a arquitetura de Von Neumann emprega muitos conceitos e busca sempre a melhoria de desempenho, uma delas é a ideia de Pipeline de Instrução.</p>
+			</div>
+			<div class="col-xs-12 col-md-12">
+				<h1> <b> Ilustração Arquitetura Harvard </b></h1>
+					<img src="Harvard.png" class="imgneumann img-responsive img-thumbnail text-center" id="harvard">
+			</div>	
+		</div>
+	</div>
 
+	<!-- Inicio da Tabela -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-12">
+				<h1 class="text-center"> <b>Comparação das Arquiteturas </b></h1>
+				<div class="table-responsive">
+					<table class="table table-striped table-bordered table-condensed table-hover ">
+						<thead>
+							<tr class="active danger">	
+								<th class="text-center"> <h2>Harvard</h2></th>
+								<th class="text-center"> <h2>Von Neumann</h2></th>
+							</tr>
+							</thead>
+							<tbody>
+									    <tr class="active primary">
+											<td class="text-center">  RISC  </td>
+											<td class="text-center"> CISC</td>
+										  </tr>	
+										<tr class="active primary">
+											<td class="text-center"> Dados e Instruções em locais diferentes </td>
+											<td class="text-center"> Dados e Instruções no mesmo local</td>
+										 </tr>
+										 <tr class="active primary">
+											<td class="text-center"> Custo de Implementação Alto</td>
+											<td class="text-center"> Custo de Implementação Baixo</td>
+										 </tr>
+										  <tr class="active primary">
+											<td class="text-center"> Arquitetura mais Complexa</td>
+											<td class="text-center"> Arquitetura mais Simplificada</td>
+										 </tr>
+										  <tr class="active primary">
+											<td class="text-center"> Maior Desempenho</td>
+											<td class="text-center"> Menor Desempenho</td>
+										 </tr>
+										 <tr class="active primary">
+											<td class="text-center"> Propósito Específico</td>
+											<td class="text-center"> Propósito Geral</td>
+										 </tr>
+										 <tr class="active primary">
+											<td class="text-center"> Menos ciclos de instruções</td>
+											<td class="text-center"> Mais ciclos de instruções</td>
+										 </tr>
+							</tbody>
+
+					</table>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Fim da Tabela -->
+	
+	
+	<!-- Inicio da Conclusao -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-12">
+				<h1> <b>Conclusão</b> </h1>
+				<p class="text-justify"></p>
+			
+			</div>
+		</div>
+	</div>
+	
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
