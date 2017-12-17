@@ -7,7 +7,7 @@
 }
 body{
 	font-family: tahoma;
-	font-size: 200%;
+	font-size: 150%;
 }
 .inicio{
     margin-top:100px;
@@ -22,16 +22,30 @@ button.download{
 	margin-top: 80px;
 }
 .menu-diferente{
-	background-color: black;
+	background-color:#6666FF
+
 }
 img#logo{
 	width: 50px;
 	margin-top: -10px;
 }
+img#puc{
+		margin:auto;
+}
+.div1 {
+  height: 400px;
+  background-image: url(tecnologia.jpg);
+ 
+
+ 
+}
 h1{
 	color: #337ab7;
 	margin-bottom: 50px;
 	margin-top: 40px;
+}
+h1#referencia{
+		color: white;
 }
 ul.componentes{
 	margin-top: 30px;
@@ -39,6 +53,13 @@ ul.componentes{
 }
 p#texto{
 	color: #337ab7;
+}
+p#div1{
+	color: white;
+	font-size: 500%;
+	font-family:  Proxima Nova Light,sans-serif;
+	text-align: center;
+	margin-top: 5%;
 }
 .sub-tittle{
 	color: #337ab7;
@@ -50,8 +71,30 @@ ul li{
 img#memoria{
 		margin-top: 100px;
 }
+img#uesc{
+	width: 200px;
+	margin-top: -20px;
+	margin-left: 36%;
+	margin-bottom: 20px;
+}
+img#front-end{
+	margin-top: 20px;
+	
+}
+
 tr{
 	padding: 20px;
+}
+nav#menu{
+	height: 100px;
+}
+section#referencia{
+		background-color: #337ab7;
+		height: 500px;
+}
+footer{
+	margin-top: 50px;
+	color: #337ab7;
 }
 
 /* Lazyload */
@@ -65,7 +108,7 @@ tr{
 }
 .lazy-img img.loaded{
     opacity: 1;
-    transition: opacity 3s;
+    transition: opacity 5s;
 }
 	
 	
