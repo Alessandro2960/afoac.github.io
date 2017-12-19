@@ -7,7 +7,7 @@
 }
 body{
 	font-family: tahoma;
-	font-size: 150%;
+	font-size: 170%;
 }
 .inicio{
     margin-top:100px;
@@ -91,6 +91,7 @@ nav#menu{
 section#referencia{
 		background-color: #337ab7;
 		height: 500px;
+		margin-top: 70px;
 }
 footer{
 	margin-top: 50px;
