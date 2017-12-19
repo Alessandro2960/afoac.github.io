@@ -193,10 +193,10 @@
 				<h3  class="sub-tittle"> 2. Unidade de Controle </h3>
 				<p class="text-justify">Podemos dizer que a Unidade de Controle é um dos principais componentes da arquitetura Von Neumann, senão o mais importante. A UC é responsável
 				desde a busca das operações até a garantia de execução das mesmas, identificação da operação que será realizada pela ULA, transferências de dados entre registradores e outros 
-				componentes do sistema através dos ciclos de Busca,Indireto,Execução e Interrupção. Entretanto, é importante pensar de forma crítica e se perguntar, como que a unidade de controle faz tantas coisas ao mesmo tempo? Devido à sua responsabilidade
+				componentes do sistema através dos ciclos de Busca, Indireto, Execução e Interrupção. Entretanto, é importante pensar de forma crítica e se perguntar, como que a unidade de controle faz tantas coisas ao mesmo tempo? Devido à sua responsabilidade
 				imensa, a melhor forma de realizar as suas tarefas são através de sinais de controle que garante o sequenciamento e execução das microoperações presentes nos ciclos que podem ser dos tipos: Relógio, Registrador de
 				Condições, Sinais de Controle para o Barramento, Sinais de Controle Internos, Sinais de Controle para o Barramento de Controle e Registradores de instruções aos quais todos esses itens
-				serão demonstrados abaixo juntamente com seus objetivos além do detalhamento dos sub-ciclos. Depois disto, vale ressaltar que muitos concluem que a Unidade de Controle é de fato o processador em si, pois desempenha papéis tão importantes
+				serão demonstrados abaixo juntamente com seus objetivos além do detalhamento dos subciclos. Depois disto, vale ressaltar que muitos concluem que a Unidade de Controle é de fato o processador em si, pois desempenha papéis tão importantes
 				na arquitetura que é insubstituível, mas esta análise é um pouco superficial já que o processador é um conjunto de componentes e não somente a UC, assim do ponto de vista de arquitetura não podemos concluir que
 				a UC é de fato o processador, mas claro sem ela nada funciona.</p>
 					
@@ -236,8 +236,11 @@
 					métodos de acesso (Sequencial,Direto,Aleatório,Associativo) e entre outros. Entretanto, o que nos interessa é fazer uma análise desse componente dentro da arquitetura Von Neumann e como
 					o desempenho geral está ligado diretamente à memória. Tomando como principal foco a questão de desempenho, o que devemos observar das memórias e sua hierarquia é que o nível superior da 
 					pirâmide possui as memórias mais rápidas, porém mais caras e com pouco armazenamento, enquanto os níveis inferiores possui maior armazenamento, mas a velocidade é bem menor. Dessa relação
-					, podemos concluir que a medida que subimos a pirâmide o custo por bit de armazenamento se torna mais caro além de sabermos agora o motivo da memória cache ser tão pequena e rápida, justamente
-					por se encontrar na parte superior da pirâmide.</p>
+					, podemos concluir que a medida que subimos a pirâmide o custo por bit de armazenamento se torna mais caro além de sabermos agora o motivo da memória cache que é utilizada pela CPU ser tão pequena e rápida, justamente
+					por se encontrar na parte superior da pirâmide. Entretanto, uma análise importante que devemos fazer é que os computadores são formados de vários tipos de memórias, mas o que temos na verdade
+					são diferentes tecnologias de memória trabalhando em conjunto para obter o máximo de eficiência pois o custo x benefício é importante neste contexto. Claro que desejamos o computador mais rápido possível,
+					mas se utilizássemos as memórias mais rápidas, este computador com certeza não iria ser aprovado para venda comercial, assim tem que haver um equilíbrio e mesclagem de tecnologias buscando melhorar o desempenho, mas atento
+					ao custo envolvido do projeto.</p>
 				</div>
 				<div class="col-xs-12 col-md-6	lazy-img">
 						<img src="" data-url="Memorias.jpg" alt="Vai aparecer img" class="imgneumann img-responsive img-thumbnail"  id="memoria"/>
@@ -253,12 +256,12 @@
 				<h1> <b> Gargalo de Von Neumann </b> </h1>
 				<p class="text-justify">Na imagem 1.1 do modelo Von Neumann podemos ver os seus principais componentes de maneira superficial, pois o foco desta resenha 
 				não é aprofundar detalhadamente em cada modulo, mas sim fazer uma breve apresentação para futuramente analisarmos de forma crítica com outros modelos. Entretanto,
-				 o que podemos observar é que apesar deste modelo ser utilizado atualmente, no princípio de sua criação já foram observados alguns proble
+				 o que podemos observar é que apesar deste modelo ser utilizado atualmente, no princípio de sua criação já foram observados alguns problemas
 				 em relação ao desempenho e um
-				 dos principais problemas foi o GARGALO de VON NEUMANN. Este gargalo surgiu simplesmente porque o processador e a memória principal precisavam trocar informações de forma
-				 bidirecional, mas como o processador é mais rápido do que a memória a velocidade se limita ao do dispositivo mais lento. Assim, uma das soluções para a resolução deste
+				 dos principais foi o GARGALO de VON NEUMANN. Este gargalo surgiu simplesmente porque o processador e a memória principal precisavam trocar informações de forma
+				rápida, mas como o processador é mais eficiente do que a memória, a velocidade se limita ao do dispositivo mais lento. Assim, uma das soluções para a resolução deste
 				problema seria colocar um componente rápido entre estes dois módulos para trabalhar de forma mais eficiente, conhecemos este elemento intermediário pelo nome de 
-				memória cache.</p>
+				memória cache ao qual discutimos suas características na parte superior da pirâmide anteriormente.</p>
 			
 			</div>
 		</div>
@@ -277,7 +280,8 @@
 				difícil além do custo envolvido ser maior, isso inclusive justifica o fato dela não ser utilizada nos computadores atuais por completa, o que temos atualmente, são combinações de características
 				das duas arquiteturas. Depois disto, é importante dizer que a arquitetura Harvard baseia-se em microcontroladores com característica RISC o que justifica o custo elevado, pois algumas implementações são feitas
 				em	nível de hardware para obter maior desempenho, enquanto a arquitetura Von Neumann é baseada em CISC, onde em baixo nível tem somente as principais instruções implementadas que são utilizadas pelo processador. Portanto,
-				é interessante relatar que as arquiteturas mencionadas têm suas vantagens e desvantagens de acordo com a aplicação desejada, não existe arquitetura melhor que a outra, mas sim uma arquitetura ideal para	a	satisfação de uma necessidade
+				é interessante relatar que as arquiteturas mencionadas têm suas vantagens e desvantagens de acordo com a aplicação desejada, não existe arquitetura melhor que a outra, mas sim uma arquitetura ideal para	a	satisfação de uma necessidade,
+					em que fatores como recursos, aplicação e propósito irão influenciar na escolha da arquitetura.
 				</p>
 			</div>
 			
