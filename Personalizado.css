@@ -33,7 +33,7 @@ img#puc{
 		margin:auto;
 }
 img#direto
-	margin-top: -25px;
+	margin-top: 0px;
 }
 
 .div1 {
@@ -43,7 +43,7 @@ img#direto
 
 }
 div#alert{
-	margin-top: 0px;	
+	margin-top: 50px;	
 }
 h1{
 	color: #337ab7;
