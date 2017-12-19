@@ -39,9 +39,11 @@ img#direto
 .div1 {
   height: 400px;
   background-image: url(tecnologia.jpg);
- 
 
- 
+
+}
+div#alert{
+	margin-top: 50px;	
 }
 h1{
 	color: #337ab7;
